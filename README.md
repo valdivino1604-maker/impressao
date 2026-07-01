@@ -1,12 +1,12 @@
-# Valdivino A1 Plotagens
+# A1 Plotagens
 
 Site simples para receber pedidos de impressão A1 de projetos de engenharia, arquitetura e obras.
 
 ## Marca
 
-Nome criado para o serviço: **Valdivino A1**.
+Nome usado no site: **A1 Plotagens**.
 
-O logo usa um monograma **V** com linhas de projeto e selo **A1**, conectando o nome Valdivino ao serviço de plotagem técnica.
+O logo usa uma prancha técnica com linhas de projeto e selo **A1**, sem nome pessoal na marca.
 
 ## Valores
 
@@ -28,4 +28,4 @@ O logo usa um monograma **V** com linhas de projeto e selo **A1**, conectando o 
 - `styles.css`: visual do site
 - `app.js`: cálculo do total e montagem da mensagem
 - `assets/hero-blueprint.svg`: imagem técnica da primeira tela
-- `assets/valdivino-a1-logo.svg`: logo da marca
+- `assets/a1-plotagens-logo.svg`: logo da marca
