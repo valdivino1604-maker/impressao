@@ -182,6 +182,72 @@ input:focus, select:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgb
 .email { flex: 1; border: 1px solid #d2d0c9; }
 .fine-print { color: var(--muted); font-size: 12px; line-height: 1.6; }
 
+.access {
+  background: white;
+  border-bottom: 1px solid var(--line);
+  padding: 64px 20px;
+}
+.access-grid { grid-template-columns: .9fr 1.1fr; }
+.access-copy h2 { font-size: 34px; margin: 12px 0 0; }
+.access-copy > p { color: var(--muted); line-height: 1.75; max-width: 620px; }
+.access-highlights { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 22px; }
+.access-highlights article, .access-panel {
+  background: #faf8f2;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+}
+.access-highlights p { color: var(--muted); line-height: 1.6; }
+.access-panel { box-shadow: 0 10px 30px rgba(7,18,20,.08); }
+.access-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; background: white; border-radius: 8px; padding: 4px; }
+.access-tab {
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 800;
+  padding: 12px;
+}
+.access-tab.active { background: var(--ink); color: white; }
+.google-button, .account-submit {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #d2d0c9;
+  background: white;
+  color: var(--ink);
+}
+.google-button:hover { border-color: var(--ink); }
+.google-mark {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d2d0c9;
+  border-radius: 999px;
+  color: #2563eb;
+  font-weight: 900;
+}
+.account-submit { border: 0; background: var(--teal); color: white; }
+.access-feedback {
+  border: 1px solid #99f6e4;
+  background: #f0fdfa;
+  border-radius: 8px;
+  color: #134e4a;
+  line-height: 1.6;
+  padding: 12px;
+}
+
 .services { background: white; border-bottom: 1px solid var(--line); padding: 64px 20px; }
 .section-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: .8fr 1.2fr; gap: 32px; }
 .section-kicker { color: var(--teal); }
@@ -196,7 +262,7 @@ footer a { color: var(--teal-bright); font-weight: 800; }
 
 @media (max-width: 900px) {
   nav { display: none; }
-  .hero-grid, .section-grid, .service-cards, .steps { grid-template-columns: 1fr; }
-  .field-grid, .field-grid.narrow, .price-summary { grid-template-columns: 1fr; }
+  .hero-grid, .section-grid, .access-grid, .service-cards, .steps { grid-template-columns: 1fr; }
+  .field-grid, .field-grid.narrow, .price-summary, .access-highlights { grid-template-columns: 1fr; }
   footer { flex-direction: column; }
 }
