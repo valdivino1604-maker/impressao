@@ -21,16 +21,23 @@ A marca usa a ideia do traço do desenho técnico: linhas limpas, prancha A1 e l
 ## Como funciona
 
 1. O cliente informa nome, WhatsApp, tipo de projeto, quantidade, prazo e acabamento.
-2. Escolhe entrega ou retirada.
-3. O site calcula o total estimado.
-4. O botão de WhatsApp ou e-mail monta a mensagem pronta para o atendimento.
-5. O cliente anexa o PDF, DWG, DXF ou PLT na conversa.
+2. Pode entrar ou cadastrar os dados na aba **Acesso** para preencher o pedido mais rápido.
+3. Escolhe entrega ou retirada.
+4. O site calcula o total estimado.
+5. O botão de WhatsApp ou e-mail monta a mensagem pronta para o atendimento.
+6. O cliente anexa o PDF, DWG, DXF ou PLT na conversa.
+
+## Acesso do cliente
+
+- Aba com opções **Entrar** e **Cadastrar**.
+- Cadastro local salva nome, e-mail, WhatsApp e empresa/obra no navegador do cliente.
+- Botão **Entrar com Google** já aparece na tela, mas o login real precisa da chave Google/Firebase.
 
 ## Arquivos
 
 - `index.html`: página principal
 - `styles.css`: visual do site
-- `app.js`: cálculo do total e montagem da mensagem
+- `app.js`: cálculo do total, mensagem e cadastro local
 - `assets/hero-blueprint.svg`: imagem técnica da primeira tela
 - `assets/traco-a1-logo.svg`: logo da marca
 - `.github/workflows/pages.yml`: publicação automática no GitHub Pages
