@@ -1,6 +1,12 @@
-# Impressão A1 para Engenheiros
+# Valdivino A1 Plotagens
 
 Site simples para receber pedidos de impressão A1 de projetos de engenharia, arquitetura e obras.
+
+## Marca
+
+Nome criado para o serviço: **Valdivino A1**.
+
+O logo usa um monograma **V** com linhas de projeto e selo **A1**, conectando o nome Valdivino ao serviço de plotagem técnica.
 
 ## Valores
 
@@ -22,3 +28,4 @@ Site simples para receber pedidos de impressão A1 de projetos de engenharia, ar
 - `styles.css`: visual do site
 - `app.js`: cálculo do total e montagem da mensagem
 - `assets/hero-blueprint.svg`: imagem técnica da primeira tela
+- `assets/valdivino-a1-logo.svg`: logo da marca
