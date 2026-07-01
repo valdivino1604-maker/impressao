@@ -73,6 +73,7 @@ function showAccessFeedback(text) {
   if (!fields.accessFeedback) return;
   fields.accessFeedback.textContent = text;
   fields.accessFeedback.hidden = false;
+  fields.accessFeedback.classList.remove('is-hidden');
 }
 
 function applyProfile(profile) {
@@ -104,7 +105,7 @@ function saveProfile() {
 
   localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
   applyProfile(profile);
-  showAccessFeedback(accessMode === 'entrar' ? 'Dados encontrados e aplicados no pedido A1.' : 'Cadastro salvo e pronto para usar no pedido A1.');
+  showAccessFeedback(accessMode === 'entrar' ? 'Dados aplicados no pedido A1.' : 'Cadastro salvo e pronto para usar no pedido A1.');
 }
 
 function setAccessMode(mode) {
@@ -113,7 +114,9 @@ function setAccessMode(mode) {
     button.classList.toggle('active', button.dataset.access === mode);
   });
   document.querySelectorAll('[data-register-only]').forEach((item) => {
-    item.hidden = mode !== 'cadastrar';
+    const shouldHide = mode !== 'cadastrar';
+    item.hidden = shouldHide;
+    item.classList.toggle('is-hidden', shouldHide);
   });
   fields.accessSubmit.textContent = mode === 'entrar' ? 'Entrar e preencher pedido' : 'Criar cadastro';
 }
@@ -138,7 +141,7 @@ fields.accessForm.addEventListener('submit', (event) => {
 });
 
 fields.googleButton.addEventListener('click', () => {
-  showAccessFeedback('Botão do Google preparado. Para ativar o login real, falta conectar a chave Google/Firebase.');
+  showAccessFeedback('Entrada com Google em breve. Por enquanto, use e-mail ou WhatsApp.');
 });
 
 Object.values(fields).forEach((field) => {
