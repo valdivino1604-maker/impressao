@@ -1,12 +1,12 @@
-# A1 Plotagens
+# Traço A1 Plotagens
 
 Site simples para receber pedidos de impressão A1 de projetos de engenharia, arquitetura e obras.
 
 ## Marca
 
-Nome usado no site: **A1 Plotagens**.
+Nome criado para o serviço: **Traço A1**.
 
-O logo usa uma prancha técnica com linhas de projeto e selo **A1**, sem nome pessoal na marca.
+A marca usa a ideia do traço do desenho técnico: linhas limpas, prancha A1 e leitura rápida para engenheiros.
 
 ## Valores
 
@@ -28,4 +28,4 @@ O logo usa uma prancha técnica com linhas de projeto e selo **A1**, sem nome pe
 - `styles.css`: visual do site
 - `app.js`: cálculo do total e montagem da mensagem
 - `assets/hero-blueprint.svg`: imagem técnica da primeira tela
-- `assets/a1-plotagens-logo.svg`: logo da marca
+- `assets/traco-a1-logo.svg`: logo da marca
