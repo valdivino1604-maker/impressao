@@ -56,6 +56,7 @@ button, input, select { font: inherit; }
   padding-bottom: 16px;
 }
 .brand { display: flex; align-items: center; gap: 12px; }
+.brand img { display: block; width: auto; height: 52px; max-width: min(220px, 58vw); }
 .brand-mark {
   display: grid;
   place-items: center;
