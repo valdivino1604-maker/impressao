@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressão A1 para Engenheiros</title>
+    <meta
+      name="description"
+      content="Pedido rápido de impressão A1 para projetos de engenharia, com entrega ou retirada."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <img class="hero-image" src="assets/hero-blueprint.svg" alt="Projeto A1 sendo impresso em uma gráfica técnica" />
+        <div class="hero-shade"></div>
+        <div class="hero-inner">
+          <header class="topbar">
+            <a class="brand" href="#">
+              <span class="brand-mark">A1</span>
+              <span>
+                <strong>Gráfica técnica</strong>
+                <small>impressão para engenheiros</small>
+              </span>
+            </a>
+            <nav>
+              <a href="#pedido">Pedido</a>
+              <a href="#servicos">Serviços</a>
+              <a href="#retirada">Entrega e retirada</a>
+            </nav>
+          </header>
+
+          <div class="hero-grid">
+            <section class="hero-copy">
+              <p class="eyebrow">A1, PDF, DWG e plantas técnicas</p>
+              <h1>Impressão A1 para projetos de engenharia</h1>
+              <p class="lead">
+                Envie seu projeto, escolha entrega ou retirada e receba uma resposta rápida para imprimir plantas,
+                cortes, fachadas e detalhamentos no tamanho certo.
+              </p>
+              <div class="price-tags">
+                <span>A1 por R$ 14,00</span>
+                <span>Entrega por R$ 10,00</span>
+              </div>
+              <div class="actions">
+                <a class="primary" href="#pedido">Pedir impressão A1</a>
+                <a class="secondary" href="#retirada">Ver entrega ou retirada</a>
+              </div>
+            </section>
+
+            <form id="pedido" class="order-card">
+              <div class="card-head">
+                <div>
+                  <p>Pedido rápido</p>
+                  <h2>Imprimir projeto A1</h2>
+                </div>
+                <span>A1 R$ 14,00</span>
+              </div>
+
+              <div class="price-summary">
+                <div><span>Preço A1</span><strong>R$ 14,00</strong></div>
+                <div><span>Entrega</span><strong>R$ 10,00</strong></div>
+                <div><span>Total estimado</span><strong id="total">R$ 24,00</strong></div>
+              </div>
+
+              <div class="field-grid">
+                <label>Nome<input id="clientName" placeholder="Seu nome" /></label>
+                <label>WhatsApp<input id="phone" placeholder="(64) 9 0000-0000" /></label>
+              </div>
+
+              <div class="field-grid narrow">
+                <label>
+                  Tipo de projeto
+                  <select id="projectType">
+                    <option>Projeto estrutural</option>
+                    <option>Projeto arquitetônico</option>
+                    <option>Projeto elétrico</option>
+                    <option>Projeto hidrossanitário</option>
+                    <option>Topografia ou loteamento</option>
+                  </select>
+                </label>
+                <label>Cópias<input id="copies" type="number" min="1" value="1" /></label>
+              </div>
+
+              <label>
+                Impressão
+                <select id="printType">
+                  <option>P&B técnico</option>
+                  <option>Colorido</option>
+                  <option>Prancha para revisão</option>
+                </select>
+              </label>
+
+              <div class="field-grid">
+                <label>
+                  Acabamento
+                  <select id="finishing">
+                    <option>Enrolado</option>
+                    <option>Dobrado em A4</option>
+                    <option>Sem dobra</option>
+                  </select>
+                </label>
+                <label>
+                  Prazo
+                  <select id="deadline">
+                    <option>Hoje</option>
+                    <option selected>Amanhã</option>
+                    <option>Sem urgência</option>
+                  </select>
+                </label>
+              </div>
+
+              <div>
+                <span class="label-title">Recebimento</span>
+                <div class="choice-row">
+                  <button class="choice active" type="button" data-mode="Entrega">Entrega</button>
+                  <button class="choice" type="button" data-mode="Retirada">Retirada</button>
+                </div>
+              </div>
+
+              <label id="addressField">Endereço de entrega<input id="address" placeholder="Rua, número, bairro e cidade" /></label>
+              <p id="pickupNote" class="pickup-note" hidden>Retirada na loja após confirmação do atendimento.</p>
+
+              <label>Arquivo do projeto<input id="file" type="file" accept=".pdf,.dwg,.plt,.dxf" /></label>
+
+              <div class="send-row">
+                <a id="whatsapp" class="whatsapp" target="_blank" rel="noreferrer">Enviar pelo WhatsApp</a>
+                <a id="email" class="email">Enviar por e-mail</a>
+              </div>
+              <p class="fine-print">Ao abrir a conversa, anexe o PDF, DWG, DXF ou PLT do projeto para conferência antes da impressão.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="services">
+        <div class="section-grid">
+          <div>
+            <p class="section-kicker">Serviço técnico</p>
+            <h2>A1 pronto para conferência, obra e protocolo</h2>
+          </div>
+          <div class="service-cards">
+            <article><h3>Arquivos técnicos</h3><p>PDF, DWG, DXF e PLT para plantas A1.</p></article>
+            <article><h3>Preço direto</h3><p>A1 por R$ 14,00 e entrega por R$ 10,00.</p></article>
+            <article><h3>Fluxo simples</h3><p>Pedido pelo celular, retirada ou entrega.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="retirada" class="steps">
+        <article><span>01</span><h3>Envie o projeto</h3><p>Informe tamanho A1, quantidade, acabamento e anexe o arquivo do desenho técnico na conversa.</p></article>
+        <article><span>02</span><h3>Confirme o pedido</h3><p>O atendimento confere arquivo, prazo e valor: A1 por R$ 14,00 e entrega por R$ 10,00 quando solicitada.</p></article>
+        <article><span>03</span><h3>Receba ou busque</h3><p>As plantas saem organizadas para obra, assinatura, reunião ou aprovação em órgãos públicos.</p></article>
+      </section>
+    </main>
+    <footer>
+      <p>Impressão A1 para engenharia, arquitetura e obras.</p>
+      <a href="#pedido">Fazer pedido agora</a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
